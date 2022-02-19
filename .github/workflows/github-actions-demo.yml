@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Test job"
+      - run: python3 -m pip install pytest
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: python3 -m pip install .
